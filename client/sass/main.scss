@@ -1,0 +1,22 @@
+@import './slides/navigation';
+@import './slides/about-me';
+@import './slides/projects';
+
+body {
+    background-color: black;
+    margin:0;
+
+    .footer {
+        background-color: red;
+        height: 100px;
+        display: none;
+    }
+}
+
+.app {
+    overflow: hidden;
+}
+
+.block{
+    display: block;
+}

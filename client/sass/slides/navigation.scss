@@ -1,0 +1,272 @@
+@import '../components/stars';
+@import '../fonts/vgr.scss';
+
+.navigation-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    width: 100%;
+    transition: 1s;
+    transition-timing-function: ease;
+}
+
+.navigation-screen.bottom-nav {
+    transition: 1s;
+    transition-timing-function: ease;
+    margin-top: 30%;
+    margin-bottom: -30%;
+
+    .navigation-container {
+        transition: 1s;
+        transition-timing-function: ease;
+        width: 100%;
+        border-radius: 0;
+        border-color: transparent;
+    }
+}
+.navigation-screen.left-nav {
+    transition: 1s;
+    transition-timing-function: ease;
+    margin-right: 20%;
+    margin-left: -20%;
+}
+.navigation-screen.right-nav {
+    transition: 1s;
+    transition-timing-function: ease;
+    margin-left: 20%;
+    margin-right: -20%;
+}
+.navigation-screen.top-nav {
+    transition: 1s;
+    transition-timing-function: ease;
+    margin-bottom: 50%;
+    margin-top: -50%;
+}
+
+.navigation-container {
+    height: 80vh;
+    width: 80vh;
+    border-radius: 50%;
+    position: relative;
+
+    border: 1px solid white;
+    
+    .about {
+        top: 170px;
+        left: calc( 50% - 130px );
+    }
+    .projects {
+        left: -10px;
+        top: calc( 50% - 60px );
+    }
+    .resume {
+        right: 190px;
+        top: calc( 50% - 60px );
+    }
+    .skills {
+        bottom: 230px;
+        left: calc( 50% - 130px );
+    }
+}
+
+
+.navlink-container {
+    position: relative;
+    transform: translate(50%, 50%);
+    animation: floating 2s linear infinite;
+}
+
+.navigation-link {
+    color:white;
+    font-size: 40px;
+    position: absolute;
+    cursor: pointer;
+    font-family: 'veger';
+    z-index: 1;
+
+    .box1 {
+        background: rgba(185, 250, 247, 0.5);
+        color:black;
+        padding: 10px;
+        text-transform:  uppercase; 
+        transform-style: preserve-3d;
+        
+        font-family: 'veger';
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -10px;
+            background-color: gray;
+            transform-style: preserve-3d;
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: -10px;
+            background-color: gray;
+            transform-style: preserve-3d;
+        }
+    }
+}
+
+.navigation-link.resume {
+
+    .box1 {
+        transform-origin: left;
+        transform: perspective(300px) rotateY(25deg);
+        transition-duration: 0.5s;
+
+        &:hover {   
+            transform: perspective(1000px) rotateY(-25deg);
+            transition-duration: 0.5s;
+        }
+        &::before {
+            top: 0;
+            left: -10px;
+            width:10px;
+            height:100%;
+            transform-origin: right;
+            transform: perspective(100px) rotateY(-50deg);
+        }
+        &::after {
+            top: 0;
+            right: -10px;
+            width:10px;
+            height:100%;
+            transform-origin: left;
+            transform: perspective(100px) rotateY(50deg);
+        }
+    }
+}
+
+.navigation-link.skills {
+
+    .box1 {
+
+        transform-origin: top;
+        transform: perspective(300px) rotateX(-20deg);
+        transition-duration: 0.5s;
+        
+
+        &:hover {   
+            &::before {
+                background-color: transparent;
+            }
+
+            &::after {
+                background-color: gray;
+            }
+
+            transform: perspective(1000px) rotateX(20deg);
+            transition-duration: 0.5s;
+            transition-delay: 100ms;
+
+            
+        }
+        &::before {
+            top: -10px;
+            left: 0;
+            width: 100%;
+            height: 10px;
+            background-color: gray;
+            transform-origin: bottom;
+            transform: perspective(100px) rotateX(90deg);
+        }
+        &::after {
+            top: 50px;
+            right: 0;
+            height: 10px;
+            width: 100%;
+            background-color: transparent;
+            transform-origin: bottom;
+            transform: perspective(1000px) rotateX(90deg);
+        }
+    }
+}
+.navigation-link-text {
+    
+    font-family: 'veger';
+}
+
+.navigation-link.projects {
+
+    .box1 {
+        transform-origin: right;
+        transform: perspective(300px) rotateY(-25deg);
+        transition-duration: 0.5s;
+        
+
+        &:hover {   
+            transform: perspective(1000px) rotateY(25deg);
+            transition-duration: 0.5s;
+        }
+        &::after {
+            top: 0;
+            right: -10px;
+            width:10px;
+            height:100%;
+            transform-origin: left;
+            transform: perspective(100px) rotateY(50deg);
+        }
+    }
+}
+
+.navigation-link.about {
+
+    .box1 {
+        transform-origin: top;
+        transform: perspective(300px) rotateX(30deg);
+        transition-duration: 0.5s;
+        
+
+        &:hover {   
+            transform: perspective(1000px) rotateX(-18deg);
+            transition-duration: 0.5s;
+
+            &::before {
+                background-color: gray;
+            }
+
+            &::after {
+                background-color: transparent;
+            }
+
+        }
+        &::before {
+            top: -10px;
+            left: 0;
+            width: 100%;
+            height: 10px;
+            background-color: transparent;
+            transform-origin: bottom;
+            transform: perspective(100px) rotateX(90deg);
+        }
+        &::after {
+            top: 50px;
+            right: 0;
+            height: 10px;
+            width: 100%;
+            background-color: gray;
+            transform-origin: bottom;
+            transform: perspective(1000px) rotateX(90deg);
+        }
+    }
+}
+
+
+@keyframes floating {
+    0% {
+        transform: translate(50%, 50%);
+    }
+    50% {
+        transform: translate(50%, 40%);
+    }
+    100% {
+        transform: translate(50%, 50%);
+    }
+
+}

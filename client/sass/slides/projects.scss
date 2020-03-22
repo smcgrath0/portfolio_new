@@ -1,0 +1,22 @@
+.projects-slide {
+    background-color: white;
+    display:none;
+    transition-duration: 1s;
+    transition-timing-function: ease;   
+    position: absolute;
+    left: -40%;
+    width: 40%;
+    height: 100%;
+    background: blue;
+    -webkit-animation: slide 1s forwards;
+    animation: slide 1s forwards;
+    
+    
+}
+@-webkit-keyframes slide {
+    100% { left: 0; }
+}
+
+@keyframes slide {
+    100% { left: 0; }
+}
