@@ -25,6 +25,16 @@ export default class Navigation extends React.Component {
       document.querySelector('.about-me-slide').classList.add('block');
       
       document.querySelector('.navigation-screen').classList.add('bottom-nav');
+    } else if (event.target.classList.contains('resume')) {
+      
+      document.querySelector('.resume-slide').classList.add('block');
+      
+      document.querySelector('.navigation-screen').classList.add('left-nav');
+    } else if (event.target.classList.contains('skills')) {
+      
+      document.querySelector('.skills-slide').classList.add('block');
+      
+      document.querySelector('.navigation-screen').classList.add('top-nav');
     }
   }
 

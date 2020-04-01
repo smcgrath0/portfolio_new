@@ -57,7 +57,7 @@ module.exports = {
   },
   devtool: 'source-map',
   devServer: {
-    host: 'localhost',
+    host: '192.168.0.32',
     port: process.env.DEV_PORT,
     contentBase: publicPath,
     historyApiFallback: true,
@@ -67,7 +67,7 @@ module.exports = {
     },
     stats: 'minimal',
     proxy: {
-      '/api': 'http://localhost:' + process.env.PORT
+      '/api': 'http://192.168.0.32/:' + process.env.PORT
     }
   }
 };

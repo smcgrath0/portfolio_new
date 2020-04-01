@@ -1,3 +1,5 @@
+@import '../fonts/montserrat.scss';
+
 .about-me-slide {
     background-color: white;
     display:none;
@@ -12,7 +14,51 @@
     animation: slidetop 1s forwards;
     overflow: hidden;
     
+
+    .about-me-container {
+        display: flex;
+        height: 99%;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .about-me-media-container {
+        width: 250px; 
+        height: 250px;
+        margin-left: 10%;
+
+
+        .me {
+            background-image: url('/dist/img/me.png');
+            background-size: cover;
+            background-position: center;
+            height: 100%;
+            width: 100%;
+            border-radius: 50%;
+        }
+    }
     
+    .about-me-text-container {
+        width: 60%;
+        .about-me-text p{
+            font-size: 22px;
+            color: white;
+            font-family: 'montserrat';
+            text-transform: uppercase;
+        }
+    }
+    .down-arrow-icon {
+        background-image: url('/dist/icons/arrow-up-solid.svg');
+        background-position: center;
+        height: 50px;
+        width: 50px;
+        background-size: cover;
+        transform: rotate(180deg);
+        margin-bottom: 20px;
+        margin-right: 50px;
+        justify-self: right;
+        align-self: flex-end;
+    }
 }
 @-webkit-keyframes slidetop {
     100% { top: 0; }

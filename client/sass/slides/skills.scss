@@ -1,0 +1,22 @@
+.skills-slide {
+    background-color: white;
+    display:none;
+    transition-duration: 2s;
+    transition-timing-function: ease;   
+    position: absolute;
+    bottom: -55%;
+    width: 100%;
+    height: 55%;
+    background: blue;
+    -webkit-animation: slideBottom 1s forwards;
+    animation: slideBottom 1s forwards;
+    overflow: hidden;
+}
+
+@-webkit-keyframes slideBottom {
+    100% { bottom: 0; }
+}
+
+@keyframes slideBottom {
+    100% { bottom: 0; }
+}

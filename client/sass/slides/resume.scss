@@ -1,0 +1,23 @@
+.resume-slide {
+    background-color: white;
+    display:none;
+    transition-duration: 2s;
+    transition-timing-function: ease;   
+    position: absolute;
+    right: -40%;
+    width: 40%;
+    height: 100%;
+    top:0;
+    background: blue;
+    -webkit-animation: slideRight 1s forwards;
+    animation: slideRight 1s forwards;
+    overflow: hidden;    
+}
+
+@-webkit-keyframes slideRight {
+    100% { right: 0%; }
+}
+
+@keyframes slideRight {
+    100% { right: 0%; }
+}

@@ -10,7 +10,7 @@
     background: blue;
     -webkit-animation: slide 1s forwards;
     animation: slide 1s forwards;
-    
+    overflow: hidden;
     
 }
 @-webkit-keyframes slide {
