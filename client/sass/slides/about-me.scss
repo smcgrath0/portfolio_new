@@ -8,7 +8,7 @@
     position: absolute;
     top: -55%;
     width: 100%;
-    height: 55%;
+    height: 75%;
     background: blue;
     -webkit-animation: slidetop 1s forwards;
     animation: slidetop 1s forwards;
@@ -23,9 +23,12 @@
         align-items: center;
     }
     .about-me-media-container {
+        min-width: 250px; 
+        min-height: 250px;
         width: 250px; 
         height: 250px;
         margin-left: 10%;
+        margin-right: 10%;
 
 
         .me {
@@ -44,7 +47,7 @@
             font-size: 22px;
             color: white;
             font-family: 'montserrat';
-            text-transform: uppercase;
+            // text-transform: uppercase;
         }
     }
     .down-arrow-icon {
@@ -58,6 +61,7 @@
         margin-right: 50px;
         justify-self: right;
         align-self: flex-end;
+        cursor: pointer;
     }
 }
 @-webkit-keyframes slidetop {

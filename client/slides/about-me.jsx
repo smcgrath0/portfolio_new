@@ -1,9 +1,20 @@
 import React from 'react';
 
 export default class AboutMe extends React.Component {
-  // constructor(props) {
-  //   super(props);
-  // }
+  constructor(props) {
+    super(props);
+
+    this.handleDropDown = this.handleDropDown.bind(this);
+  }
+  handleDropDown() {
+      
+      // this.setState({isClicked: true});
+      document.querySelector('.about-me-slide').classList.remove('block');
+      
+      document.querySelector('.navigation-screen').classList.remove( 'bottom-nav' );
+
+  }
+
   render() {
     return (
       <div className="about-me-slide">
@@ -23,7 +34,7 @@ export default class AboutMe extends React.Component {
                         And now looking for opportunities to learn and grow as a developer.</p>
             </div>
           </div>
-          <div className="down-arrow-icon"></div>
+          <div className="down-arrow-icon" onClick={this.handleDropDown}></div>
         </div>
       </div>
     );

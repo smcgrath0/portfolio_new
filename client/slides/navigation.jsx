@@ -14,14 +14,14 @@ export default class Navigation extends React.Component {
 
   handleClick(event) {
     console.log(event.target);
-    this.setState({isClicked: true});
+    // this.setState({isClicked: true});
     if (event.target.classList.contains('projects')) {
       
       document.querySelector('.projects-slide').classList.add('block');
       
       document.querySelector('.navigation-screen').classList.add('right-nav');
     } else if (event.target.classList.contains('about')) {
-      
+      console.log('1')
       document.querySelector('.about-me-slide').classList.add('block');
       
       document.querySelector('.navigation-screen').classList.add('bottom-nav');
@@ -59,7 +59,7 @@ export default class Navigation extends React.Component {
   render() {
     return (
       <div className="navigation-screen" onClick={ (event) => {
-        if (this.state.isClicked) {
+        if (this.context.isClicked) {
           this.handleHomeClick(event)
         }
       }}>
