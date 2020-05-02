@@ -1,0 +1,99 @@
+.card {
+    width: 40%;
+    height: fit-content;
+    background: rgba(185, 250, 247, 0.5);
+    border-radius: 20px;
+    transition-duration: .25s;
+    transition-timing-function: ease;
+    margin: 25px;   
+
+    &:hover {
+        transform: scale(1.05);
+        transition-duration: .25s;
+        transition-timing-function: ease;
+
+        .card-mediaContainer {
+
+            &-image {
+                transition-duration: .25s;
+                transition-timing-function: ease;
+                filter: none;
+            }
+        }
+    }
+
+    &-title {
+        margin: 0;
+    }
+    &-mediaContainer {
+        display: flex;
+        &-image {
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            max-width: 100%;
+            transition-duration: .25s;
+            transition-timing-function: ease;
+            filter: grayscale(10%) opacity(50%);
+        }
+    }
+
+    &-skillsContainer {
+        .card-skills-list {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding-left: 10px;
+            padding-top: 10px;
+
+            &-item {
+
+                height: 30px;
+                width: 30px;
+                background-size: contain;
+                background-position: center;
+                &.js-icon {
+                    background-image: url(/dist/img/javascript-icon.png);
+                }
+            }
+        }
+    }
+    &-textContainer {
+        padding: 10px;
+        
+        font-family: 'PT Sans';
+        margin-top: 0;
+        max-height: 275px;
+        min-height: 275px;
+    }
+    &-buttonContainer {
+        width: 100%;
+        display: flex;
+
+        .card-button-link {
+            flex-grow: 1;
+            &:first-of-type {
+                .card-button {
+                    border-bottom-left-radius: 20px;
+                }
+            }
+            &:last-of-type {
+                .card-button {
+                    border-bottom-right-radius: 20px;
+                }
+            }
+        }
+
+        .card-button {
+            width: 100%;
+            border: 0;
+            padding: 15px;
+            background-color: blueviolet;
+            font-family: 'PT Sans';
+
+            &:hover {
+                background-color: cadetblue;
+                color: white;
+            }
+        }
+    }
+}

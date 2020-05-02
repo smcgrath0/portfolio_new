@@ -1,17 +1,62 @@
+@import '../components/card';
+
 .projects-slide {
     background-color: white;
     display:none;
     transition-duration: 1s;
     transition-timing-function: ease;   
     position: absolute;
-    left: -40%;
-    width: 40%;
+    left: -50%;
+    width: 50%;
     height: 100%;
-    background: blue;
+    background: black;
     -webkit-animation: slide 1s forwards;
     animation: slide 1s forwards;
     overflow: hidden;
     
+    &.slideback {
+        -webkit-animation: slidebackleft 1s forwards;
+        animation: slidebackleft 1s forwards;
+    }
+
+    .projects-container {
+        width: 100%;
+        height: 100%;
+        margin-top: -6px;
+        overflow-y: scroll;
+
+        &-inner {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-wrap: wrap;
+            max-width: 700px;
+            padding: 50px 0;
+        }
+
+        &::-webkit-scrollbar {
+            width: 20px;
+        }
+        
+        /* Track */
+        &::-webkit-scrollbar-track {
+            box-shadow: inset 0 0 5px grey; 
+            border-radius: 10px;
+        }
+        
+        /* Handle */
+        &::-webkit-scrollbar-thumb {
+            background: red; 
+            border-radius: 10px;
+        }
+        
+        /* Handle on hover */
+        &::-webkit-scrollbar-thumb:hover {
+            background: #b30000; 
+        }
+    }
 }
 @-webkit-keyframes slide {
     100% { left: 0; }
@@ -19,4 +64,14 @@
 
 @keyframes slide {
     100% { left: 0; }
+}
+
+@-webkit-keyframes slidebackleft {
+    0% { left: 0; }
+    100% { left: -50%; }
+}
+
+@keyframes slidebackleft {
+    0% { left: 0; }
+    100% { left: -50%; }
 }

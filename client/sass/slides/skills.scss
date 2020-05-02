@@ -11,6 +11,11 @@
     -webkit-animation: slideBottom 1s forwards;
     animation: slideBottom 1s forwards;
     overflow: hidden;
+
+    &.slideback {
+        -webkit-animation: slidebackbottom 1s forwards;
+        animation: slidebackbottom 1s forwards;
+    }
 }
 
 @-webkit-keyframes slideBottom {
@@ -19,4 +24,14 @@
 
 @keyframes slideBottom {
     100% { bottom: 0; }
+}
+
+@-webkit-keyframes slidebackbottom {
+    0% { bottom: 0; }
+    100% {  bottom: -55%; }
+}
+
+@keyframes slidebackbottom {
+    0% { bottom: 0; }
+    100% {  bottom: -55%; }
 }

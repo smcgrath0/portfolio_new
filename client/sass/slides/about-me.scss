@@ -6,30 +6,42 @@
     transition-duration: 2s;
     transition-timing-function: ease;   
     position: absolute;
-    top: -55%;
+    top: -100%;
     width: 100%;
     height: 75%;
-    background: blue;
+    background: black;
     -webkit-animation: slidetop 1s forwards;
     animation: slidetop 1s forwards;
     overflow: hidden;
     
+    &.slideback {
+        -webkit-animation: slideback 1s forwards;
+        animation: slideback 1s forwards;
+    }
 
     .about-me-container {
         display: flex;
         height: 99%;
         width: 100%;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
+        position: relative;
+
+        &-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 40px 40px;
+            max-width: 1200px;
+            background: rgba(185, 250, 247, 0.5);
+            border-radius: 50px;
+        }
     }
     .about-me-media-container {
         min-width: 250px; 
         min-height: 250px;
         width: 250px; 
         height: 250px;
-        margin-left: 10%;
-        margin-right: 10%;
-
 
         .me {
             background-image: url('/dist/img/me.png');
@@ -53,21 +65,36 @@
     .down-arrow-icon {
         background-image: url('/dist/icons/arrow-up-solid.svg');
         background-position: center;
+        filter: invert(98%) sepia(25%) saturate(5829%) hue-rotate(168deg) brightness(111%) contrast(96%) opacity(50%);
         height: 50px;
         width: 50px;
+        min-width: 50px;
         background-size: cover;
         transform: rotate(180deg);
         margin-bottom: 20px;
         margin-right: 50px;
-        justify-self: right;
-        align-self: flex-end;
+        bottom: 0;
+        right:0;
         cursor: pointer;
+        position: absolute;
     }
 }
 @-webkit-keyframes slidetop {
+    0% { top: -100% }
     100% { top: 0; }
 }
 
 @keyframes slidetop {
+    0% { top: -100% }
     100% { top: 0; }
+}
+
+@-webkit-keyframes slideback {
+    0% { top: 0% }
+    100% { top: -100%; }
+}
+
+@keyframes slideback {
+    0% { top: 0% }
+    100% { top: -100%; }
 }

@@ -4,14 +4,19 @@
     transition-duration: 2s;
     transition-timing-function: ease;   
     position: absolute;
-    right: -40%;
-    width: 40%;
+    right: -50%;
+    width: 50%;
     height: 100%;
     top:0;
     background: blue;
     -webkit-animation: slideRight 1s forwards;
     animation: slideRight 1s forwards;
     overflow: hidden;    
+
+    &.slideback {
+        -webkit-animation: slidebackright 1s forwards;
+        animation: slidebackright 1s forwards;
+    }
 }
 
 @-webkit-keyframes slideRight {
@@ -20,4 +25,15 @@
 
 @keyframes slideRight {
     100% { right: 0%; }
+}
+
+
+@-webkit-keyframes slidebackright {
+    0% { right: 0%; }
+    100% {  right: -50%; }
+}
+
+@keyframes slidebackright {
+    0% { right: 0%; }
+    100% {  right: -50%; }
 }

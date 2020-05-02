@@ -1,5 +1,5 @@
 import React from 'react';
-import AppContext from './context';
+import {AppContext, app } from './context';
 import Nav from './slides/navigation';
 import AboutMe from './slides/about-me';
 import Projects from './slides/projects';
@@ -13,21 +13,28 @@ export default class App extends React.Component {
   constructor(props) {
     super(props);
 
-    this.state = {
-      isClicked : false
+    this.setClicked = () => {
+      let isC = !this.state.isClicked;
+      this.setState({isClicked : isC });
     }
-  }
+    
 
-  setClicked() {
-    this.setState({isClicked : !isClicked });
+    this.setCurrentSlide = (slide) => {
+      this.setState({currentSlide : slide });
+    }
+
+    this.state = {
+      isClicked : app.isClicked,
+      setClicked: this.setClicked,
+      currentSlide : app.currentSlide,
+      setCurrentSlide: this.setCurrentSlide
+    }
+
   }
 
   render() {
-    const appContext = {
-      isClicked: this.state.isClicked
-    };
     return (
-    <AppContext.Provider value={appContext} >
+    <AppContext.Provider value={this.state} >
       <div className="app">
         <AboutMe />
         <Projects />

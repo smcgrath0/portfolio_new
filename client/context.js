@@ -1,5 +1,12 @@
 import React from 'react';
 
-const AppContext = React.createContext(null);
+export const app = {
+    isClicked: false,
+    setClicked: () => {},
+    currentSlide: '',
+    setCurrentSlide: () => {}
+};
 
-export default AppContext;
+export const AppContext = React.createContext(
+    app
+);
