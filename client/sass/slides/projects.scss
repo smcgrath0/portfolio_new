@@ -34,6 +34,8 @@
             flex-wrap: wrap;
             max-width: 700px;
             padding: 50px 0;
+            transform: translate(0%, 0%);
+            animation: floating2 2s linear infinite;
         }
 
         &::-webkit-scrollbar {
@@ -42,8 +44,7 @@
         
         /* Track */
         &::-webkit-scrollbar-track {
-            box-shadow: inset 0 0 5px grey; 
-            border-radius: 10px;
+            box-shadow: 0;
         }
         
         /* Handle */
@@ -74,4 +75,17 @@
 @keyframes slidebackleft {
     0% { left: 0; }
     100% { left: -50%; }
+}
+
+@keyframes floating2 {
+    0% {
+        transform: translate(0%, 0%);
+    }
+    50% {
+        transform: translate(0%, -1%);
+    }
+    100% {
+        transform: translate(0%, 0%);
+    }
+
 }

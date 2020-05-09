@@ -1,0 +1,53 @@
+.d-none {
+    display: none;
+}
+
+.d-block {
+    display: block;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.height-zero {
+    height: 0;
+}
+
+.icon-dropdown-arrow {
+    background-image: url('/dist/icons/chevron-down-solid.svg');
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+    background-position: center;
+    background-size: contain;
+    cursor: pointer;
+}
+
+.js-icon {
+    background-image: url(/dist/img/javascript-icon.png);
+}
+.react-icon {
+    background-image: url(/dist/img/react-icon.png);
+}
+.php-icon {
+    background-image: url(/dist/img/php-icon.png);
+}
+.node-icon {
+    background-image: url(/dist/img/node-icon.png);
+}
+.mysql-icon {
+    background-image: url(/dist/img/mysql-icon.png);
+}
+.html-icon {
+    background-image: url(/dist/img/html-icon.png);
+}
+.css-icon {
+    background-image: url(/dist/img/css-icon.png);
+}
+.sass-icon {
+    background-image: url(/dist/img/sass-icon.png);
+}
+.java-icon {
+    background-image: url(/dist/img/java-icon.png);
+}

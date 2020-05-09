@@ -46,14 +46,12 @@
             padding-top: 10px;
 
             &-item {
-
-                height: 30px;
-                width: 30px;
+                margin-right: 10px;
+                height: 40px;
+                width: 40px;
+                border-radius: 7px;
                 background-size: contain;
                 background-position: center;
-                &.js-icon {
-                    background-image: url(/dist/img/javascript-icon.png);
-                }
             }
         }
     }
@@ -62,8 +60,19 @@
         
         font-family: 'PT Sans';
         margin-top: 0;
-        max-height: 275px;
-        min-height: 275px;
+        
+        .card-list {
+            overflow: hidden;
+            height: auto;
+            max-height: 0;
+            transition: max-height 1s ease;
+
+
+            &.height-auto {
+                max-height: 275px;
+                transition: max-height 1s ease;
+            }
+        }
     }
     &-buttonContainer {
         width: 100%;
@@ -87,8 +96,9 @@
             width: 100%;
             border: 0;
             padding: 15px;
-            background-color: blueviolet;
+            background-color: rgba(197, 197, 197, .7);
             font-family: 'PT Sans';
+            font-weight: 700;
 
             &:hover {
                 background-color: cadetblue;
@@ -96,4 +106,14 @@
             }
         }
     }
+}
+
+@-webkit-keyframes heightAuto {
+    0% { max-height: 0% }
+    100% { max-height: auto; }
+}
+
+@keyframes heightAuto {
+    0% { max-height: 0% }
+    100% { max-height: auto; }
 }
