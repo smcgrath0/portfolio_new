@@ -10,16 +10,15 @@ class Skills extends React.Component {
   handleNavigation() {
       this.context.setClicked();
 
-      document.querySelector('.navigation-screen').classList.remove( 'bottom-nav' );
+      document.querySelector('.navigation-screen').classList.remove( 'top-nav' );
 
       document.querySelector('.skills-slide').classList.add('slideback');
       setTimeout(function () {
         document.querySelector('.skills-slide').classList.remove('block');
         document.querySelector('.skills-slide').classList.remove('slideback');
-      }, 500);
-      
-
+      }, 1000);
   }
+
   render() {
     return (
       <div className="skills-slide">
