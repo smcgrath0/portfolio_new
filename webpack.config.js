@@ -56,18 +56,18 @@ module.exports = {
     ]
   },
   devtool: 'source-map',
-  devServer: {
-    host: 'shanemcgrath.herokuapp.com',
-    port: 5000,
-    contentBase: publicPath,
-    historyApiFallback: true,
-    watchContentBase: true,
-    watchOptions: {
-      ignored: /uploads/
-    },
-    stats: 'minimal',
-    proxy: {
-      '/api': 'shanemcgrath.herokuapp.com'
-    }
-  }
+  // devServer: {
+  //   host: 'shanemcgrath.herokuapp.com',
+  //   port: 5000,
+  //   contentBase: publicPath,
+  //   historyApiFallback: true,
+  //   watchContentBase: true,
+  //   watchOptions: {
+  //     ignored: /uploads/
+  //   },
+  //   stats: 'minimal',
+  //   proxy: {
+  //     '/api': 'shanemcgrath.herokuapp.com'
+  //   }
+  // }
 };
