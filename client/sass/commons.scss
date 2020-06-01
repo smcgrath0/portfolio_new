@@ -26,28 +26,94 @@
 
 .js-icon {
     background-image: url(/dist/img/javascript-icon.png);
+    background-color: black;
 }
 .react-icon {
     background-image: url(/dist/img/react-icon.png);
+    background-color: black;
 }
 .php-icon {
     background-image: url(/dist/img/php-icon.png);
+    background-color: black;
 }
 .node-icon {
     background-image: url(/dist/img/node-icon.png);
+    background-color: black;
 }
 .mysql-icon {
     background-image: url(/dist/img/mysql-icon.png);
+    background-color: black;
 }
 .html-icon {
     background-image: url(/dist/img/html-icon.png);
+    background-color: black;
 }
 .css-icon {
     background-image: url(/dist/img/css-icon.png);
+    background-color: black;
+    background-size: contain !important;
+    background-position: center;
 }
 .sass-icon {
-    background-image: url(/dist/img/sass-icon.png);
+    background-image: url(/dist/icons/sass-icon.png);
+    background-color: black;
+    background-position: center;
 }
 .java-icon {
-    background-image: url(/dist/img/java-icon.png);
+    background-image: url(/dist/icons/java-icon.jpg);
+    background-color: black;
+    filter: invert(100%);
+}
+.c-icon {
+    background-image: url(/dist/icons/c-programming.webp);
+    background-color: black;
+}
+.wordpress-icon {
+    background-image: url(/dist/icons/wordpress.jpg);
+    background-color: black;
+    background-position: center;
+    filter: invert(100%);
+}
+.less-icon {
+    background-image: url(/dist/icons/less-icon.png);
+    background-color: black;
+}
+.gulp-icon {
+    background-image: url(/dist/icons/gulp-icon.gif);
+    background-color: black;
+    background-position: center;
+}
+.webpack-icon {
+    background-image: url(/dist/icons/webpack-icon.png);
+    background-color: black;
+    background-position: center;
+    background-size: contain !important;
+}
+.jsp-icon {
+    background-image: url(/dist/icons/jsp-icon.png);
+    background-color: white;
+    filter: invert(100%);
+}
+.python-icon {
+    background-image: url(/dist/icons/python.png);
+    background-color: black;
+    filter: invert(100%);
+}
+.aem-icon {
+    background-image: url(/dist/icons/aem-icon.png);
+    background-color: white;
+    background-position: center;
+    filter: invert(100%);
+}
+.vue-icon {
+    background-image: url(/dist/icons/vue.jpg);
+    background-color: white;
+    background-position: center;
+    filter: invert(100%);
+}
+.react-native-icon {
+    background-image: url(/dist/icons/react-native.png);
+    background-color: white;
+    background-position: center;
+    filter: invert(100%);
 }
