@@ -57,8 +57,8 @@ module.exports = {
   },
   devtool: 'source-map',
   devServer: {
-    host: '192.168.0.32',
-    port: process.env.DEV_PORT,
+    host: 'shanemcgrath.herokuapp.com',
+    port: 5000,
     contentBase: publicPath,
     historyApiFallback: true,
     watchContentBase: true,
@@ -66,8 +66,8 @@ module.exports = {
       ignored: /uploads/
     },
     stats: 'minimal',
-    // proxy: {
-    //   '/api': 'http://192.168.0.32/:' + process.env.PORT
-    // }
+    proxy: {
+      '/api': 'shanemcgrath.herokuapp.com'
+    }
   }
 };
