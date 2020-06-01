@@ -32,15 +32,15 @@ class Resume extends React.Component {
             <div className="inner">
 
               <div id="hd">
-                <div class="yui-gc">
-                  <div class="yui-u first">
+                <div className="yui-gc">
+                  <div className="yui-u first">
                     <h1>Shane Mcgrath</h1>
                     <h2>Software Engineer</h2>
                   </div>
 
-                  <div class="yui-u">
-                    <div class="contact-info">
-                      <h3><a id="pdf" href="#">Download PDF</a></h3>
+                  <div className="yui-u">
+                    <div className="contact-info">
+                      <h3><a id="pdf" href="#" target="_blank">Download PDF</a></h3>
                       <h3><a href="mailto:smcgrath7777@gmail.com">smcgrath7777@gmail.com</a></h3>
                       <h3>(949)-554-9515</h3>
                     </div>
@@ -50,85 +50,56 @@ class Resume extends React.Component {
 
               <div id="bd">
                 <div id="yui-main">
-                  <div class="yui-b">
+                  <div className="yui-b">
 
-                    <div class="yui-gf">
-                      <div class="yui-u first">
+                    <div className="yui-gf">
+                      <div className="yui-u first">
                         <h2>Experience</h2>
                       </div>
 
-                      <div class="yui-i">
+                      <div className="yui-i">
 
-                        <div class="job">
+                        <div className="job">
                           <h2>Headwire.com Inc.</h2>
                           <h3>Frontend Software Engineer</h3>
                           <h4>Dec 2019 - May 2020</h4>
-                          <p>Intrinsicly enable optimal core competencies through corporate relationships. Phosfluorescently implement worldwide vortals and client-focused imperatives. Conveniently initiate virtual paradigms and top-line convergence. </p>
+                          <ul>
+                            <li>Managed JSP and Slightly files using AEM 6.1+ to build components and pages </li>
+                            <li>Worked closely with clientlibs and models using JavaScript and Java </li>
+                            <li>Samples of work 
+                              <ul>
+                                <li><a href="https://www.golfdigest.com" target="_blank">Golf Digest</a></li>
+                                <li><a href="https://docs.paloaltonetworks.com" target="_blank">Palo Alto Networks Documentation</a></li>
+                              </ul>
+                            </li>
+                          </ul>
                         </div>
 
                       </div>
                     </div>
 
-                    <div class="yui-gf">
-                      <div class="yui-u first">
-                        <h2>Technical Skills</h2>
-                      </div>
-                      <div class="yui-i">
-                        <p >
-                          <span className="bold">Strong</span>: JavaScript (ES5/ES6), HTML5, CSS3, Java, React, Node.js, Express, PHP, MySQL, JSP
-                        </p>
-                        <p >
-                          <span className="bold">Experienced</span>: C, jQuery, SASS, RESTful APIs, Linux, UX/UI, React Native, AEM, WordPress
-                        </p>
-                        <p >
-                          <span className="bold">Tools</span>: ES6, Git, OOP, Agile Methodology, Wireframing, Task Management, AWS, phpMyAdmin, Database Schemas, Babel, Webpack, Gulp, Jasmine, NPM, PostgreSQL
-                        </p>
-                      </div>
-                    </div>
-
-                    <div class="yui-gf">
-                      <div class="yui-u first">
-                        <h2>Projects</h2>
-                      </div>
-                      <div class="yui-u">
-
-                          <div class="talent">
-                            <h2>Nile</h2>
-                            <p>VR E-commerce website.</p>
-                            <p>Incorporated React to manage state of the products available for sale and pending items in the cart.</p>
-                          </div>
-
-                          <div class="talent">
-                            <h2>Jungle Mix Up</h2>
-                            <p>Card matching game, that keeps track of score. </p>
-                            <p>Demonstrates <span className="bold">JavaScript</span> with HTML and CSS for an easy to use interface.</p>
-                          </div>
-
-                          <div class="talent">
-                            <h2>ADMe</h2>
-                            <p>Worked with a team of four others to make a place where content creators and companies can interact to produce ads and win prize</p>
-                          </div>
-                      </div>
-                    </div>
-
-                    
-
-
-                    <div class="yui-gf last">
-                      <div class="yui-u first">
+                    <div className="yui-gf last">
+                      <div className="yui-u first">
                         <h2>Education</h2>
                       </div>
-                      <div class="yui-i">
+                      <div className="yui-i">
                         <h2>LearningFuze Immersive Coding Bootcamp</h2>
-                        <h4>Immersed in a full stack to learn the fundamentals of web and software development with over 800 hours of work</h4>
+                        <p>Immersed in a 3-month full stack development bootcamp to learn the fundamentals of web and software development with over 800 hours of work in total (~70hrs/week)</p>
                       </div>
-                      <div class="yui-i">
+                      <div className="yui-i">
                         <h2>Cal State Fullerton</h2>
-                        <h4>Mechanical Engineering Major </h4>
+                        <h4 className="college-major">Mechanical Engineering</h4>
                       </div>
-                      <div class="yui-i">
+                      <div className="yui-i">
                         <h2>Irvine Valley College</h2>
-                        <p><span className="bold">Related Classes</span>: C, Java, Calculus I, II, III, Linear Algebra and Differential Equations</p>
+                        <p><span className="bold">Related Classes</span></p>
+                        <ul>
+                          <li>C</li>
+                          <li>Java</li>
+                          <li>Data Stuctures and Algorithms</li>
+                          <li>Calculus I, II, III</li>
+                          <li>Linear Algebra and Differential Equations</li>
+                        </ul>
                       </div>
                     </div>
 
