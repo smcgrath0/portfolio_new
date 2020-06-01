@@ -6,6 +6,7 @@ import Projects from './slides/projects';
 import Skills from './slides/skills';
 import Resume from './slides/resume';
 import Footer from './components/footer';
+import StartingScreen from './components/startingScreen'
 import './sass/main.scss';
 // import { BrowserRouter as Router, Route } from 'react-router-dom';
 
@@ -36,6 +37,7 @@ export default class App extends React.Component {
     return (
     <AppContext.Provider value={this.state} >
       <div className="app">
+        <StartingScreen />
         <AboutMe />
         <Projects />
         <Nav />
