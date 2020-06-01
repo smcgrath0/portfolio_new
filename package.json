@@ -6,11 +6,12 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "client": "webpack-dev-server",
-    "start": "npm-run-all --silent --parallel watch client",
+    "start": "node server/index.js",
     "build": "webpack --mode=production",
-    "dev": "node server/index.js",
+    "dev": "npm-run-all --silent --parallel watch client",
     "watch": "nodemon ."
   },
+  "heroku-run-build-script": true,
   "author": "",
   "license": "ISC",
   "dependencies": {
