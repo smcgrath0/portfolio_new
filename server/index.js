@@ -8,7 +8,8 @@ const server = express();
 const port = process.env.PORT || 8080;
 
 server.use(bodyParser.json());
-
+console.log(port);
+server.use(express.static(path.join(__dirname, 'public')));
 server.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, 'public/index.html'));
 });
@@ -20,3 +21,4 @@ server.use((err, req, res, next) => {
     message: 'An unexpected error has occurred'
   });
 });
+server.listen(port);

@@ -10,7 +10,7 @@ module.exports = {
   },
   entry: './client',
   output: {
-    path: srcPath,
+    path: publicPath,
     publicPath: publicPath,
     filename: 'bundle.js'
   },
@@ -56,11 +56,11 @@ module.exports = {
         ]
       }
     ]
-  },
-  devtool: 'source-map',
+  }
+  // devtool: 'source-map',
   // devServer: {
-  //   host: 'shanemcgrath.herokuapp.com',
-  //   port: 5000,
+  //   host: 'localhost',
+  //   port: 3000,
   //   contentBase: publicPath,
   //   historyApiFallback: true,
   //   watchContentBase: true,
@@ -69,7 +69,7 @@ module.exports = {
   //   },
   //   stats: 'minimal',
   //   proxy: {
-  //     '/api': 'shanemcgrath.herokuapp.com'
+  //     '/api': 'localhost:' + port
   //   }
   // }
 };

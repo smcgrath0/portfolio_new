@@ -4,13 +4,8 @@
   "description": "Shane Mcgrath's portfolio",
   "main": "server/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "client": "webpack-dev-server",
-    "heroku-postbuild": "webpack -p",
-    "start": "node server/index.js",
-    "build": "webpack --mode=production",
-    "dev": "npm-run-all --silent --parallel watch client",
-    "watch": "nodemon ."
+    "dev": "node server/index.js",
+    "heroku-postbuild": "webpack -p"
   },
   "heroku-run-build-script": true,
   "author": "",
