@@ -6,13 +6,14 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "client": "webpack-dev-server",
-    "start": "node .",
+    "start": "node server/index.js",
     "build": "webpack --mode=production",
     "dev": "npm-run-all --silent --parallel watch client",
     "watch": "nodemon .",
     "db-dump": ". ./.env; mysqldump -u$MYSQL_USER -p$MYSQL_PASSWORD $MYSQL_DATABASE > database/$(date +%s)_dump.sql",
     "db-import": ". ./.env; mysql -u$MYSQL_USER -p$MYSQL_PASSWORD $MYSQL_DATABASE <"
   },
+  "heroku-run-build-script": true,
   "author": "",
   "license": "ISC",
   "dependencies": {

@@ -66,8 +66,8 @@ module.exports = {
       ignored: /uploads/
     },
     stats: 'minimal',
-    proxy: {
-      '/api': 'http://192.168.0.32/:' + process.env.PORT
-    }
+    // proxy: {
+    //   '/api': 'http://192.168.0.32/:' + process.env.PORT
+    // }
   }
 };
