@@ -10,7 +10,9 @@ module.exports = {
   },
   entry: './client',
   output: {
-    path: publicPath
+    path: srcPath,
+    publicPath: publicPath,
+    filename: 'bundle.js'
   },
   module: {
     rules: [

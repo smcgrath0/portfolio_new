@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "client": "webpack-dev-server",
     "heroku-postbuild": "webpack -p",
-    "start": "node server/index",
+    "start": "node server/index.js",
     "build": "webpack --mode=production",
     "dev": "npm-run-all --silent --parallel watch client",
     "watch": "nodemon ."
