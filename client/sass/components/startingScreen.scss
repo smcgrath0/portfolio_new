@@ -1,0 +1,62 @@
+.startingScreen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+    // background-image: url(https://assets.materialup.com/uploads/24c4e356-8c92-4a55-8f9f-f8a809e2e805/attachment.gif);
+    // background-size: cover;
+    // background-repeat: no-repeat;
+    background-position: center;
+    &-inner {
+        background-color: rgba(197, 197, 197, .7);
+        padding: 5% 10%;
+        border-radius: 20px;
+        width: 320px;
+        animation: floating2 1.5s infinite;
+    }
+
+    &-textContainer {
+        font-family: 'veger';
+        h1, h2 {
+            text-align: center;
+            font-family: 'montserrat';
+            text-transform: uppercase;
+            font-weight: 600;
+        } 
+        h2 {
+
+        }
+    }
+    &-buttonContainer {
+        display: flex;
+        justify-content: center;
+
+        button {
+            background: rgba(185, 250, 247, 0.5);
+            border: 0;
+            border-radius: 10px;
+            font-family: 'veger';
+            letter-spacing: 2px;
+            font-weight: 600;
+            font-size: 20px;
+            text-transform: uppercase;
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: 0.5s;
+            &:focus {
+                outline: 0;
+            }
+
+            &:hover {
+                transition: 0.5s;
+                background: rgb(185, 250, 247);
+            }
+        }
+    }
+}
