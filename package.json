@@ -9,7 +9,7 @@
     "start": "npm-run-all --silent --parallel watch client",
     "build": "webpack --mode=production",
     "dev": "node server/index.js",
-    "watch": "nodemon .",
+    "watch": "nodemon ."
   },
   "author": "",
   "license": "ISC",
