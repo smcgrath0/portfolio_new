@@ -4,7 +4,7 @@
   "description": "Shane Mcgrath's portfolio",
   "main": "server/index.js",
   "scripts": {
-    "dev": "node server/index.js",
+    "start": "node server/index.js",
     "heroku-postbuild": "webpack -p"
   },
   "heroku-run-build-script": true,
