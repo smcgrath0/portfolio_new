@@ -7,11 +7,74 @@
     bottom: -55%;
     width: 100%;
     height: 55%;
-    background: blue;
+    background: black;
     -webkit-animation: slideBottom 1s forwards;
     animation: slideBottom 1s forwards;
     overflow: hidden;
 
+.skills-backend,
+.skills-frontend {
+    display: block;
+    width: 50%;
+
+    h2 {
+        text-align: center;
+        font-size: 32px;
+        font-weight: 500;
+        font-family: 'Georgia';
+        color: white;
+    }
+}
+.skills-frontend {
+    margin-left: 10%;
+}
+.skills-backend {
+    margin-right: 10%;
+    .skillsContainer {
+        
+        .skills-list {
+            margin-right: 10%;
+        }
+
+    }
+}
+    .skillsContainer {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: flex-start;
+        padding-top: 50px;
+        
+        .skills-list {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 80%;
+            margin-left: 10%;
+            flex-wrap: wrap;
+            padding: 0;
+
+            &-item {
+                list-style: none;
+                background-repeat: no-repeat;
+                background-size: cover;
+                height: 75px;
+                width: 75px;
+                margin-right: 20px;
+                margin-bottom: 20px;
+                border-radius: 10px;
+                cursor: pointer;
+                transition: 0.5s;
+
+                &:hover {
+                    transform: scale(1.1);
+                    transition: 0.5s;
+                }
+            }
+        }
+        
+    }
     &.slideback {
         -webkit-animation: slidebackbottom 1s forwards;
         animation: slidebackbottom 1s forwards;
