@@ -19,11 +19,6 @@ module.exports = {
     publicPath: publicPath,
     filename: '[name].bundle.js'
   },
-  optimization: {
-    splitChunks: {
-      chunks: 'all',
-    },
-  },
   module: {
     rules: [
       {
