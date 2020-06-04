@@ -25,13 +25,10 @@
         font-family: 'veger';
         h1, h2 {
             text-align: center;
-            font-family: 'montserrat';
+            font-family: 'montserrat', 'Montserrat';
             text-transform: uppercase;
             font-weight: 600;
         } 
-        h2 {
-
-        }
     }
     &-buttonContainer {
         display: flex;
