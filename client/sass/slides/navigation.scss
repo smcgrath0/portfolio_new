@@ -110,7 +110,7 @@
     font-size: 40px;
     position: absolute;
     cursor: pointer;
-    font-family: 'veger';
+    font-family: 'veger','Russo One';
     z-index: 1;
 
     .box1 {
@@ -120,7 +120,7 @@
         text-transform:  uppercase; 
         transform-style: preserve-3d;
         
-        font-family: 'veger';
+        font-family: 'veger','Russo One';
 
         &::before {
             content: '';
@@ -217,7 +217,7 @@
 }
 .navigation-link-text {
     
-    font-family: 'veger';
+    font-family: 'veger','Russo One';
 }
 
 .navigation-link.projects {
