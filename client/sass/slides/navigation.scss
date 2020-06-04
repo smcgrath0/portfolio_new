@@ -1,5 +1,4 @@
 @import '../components/stars';
-@import '../fonts/vgr.scss';
 
 .navigation-screen {
     display: flex;
@@ -110,7 +109,7 @@
     font-size: 40px;
     position: absolute;
     cursor: pointer;
-    font-family: 'veger','Russo One';
+    font-family:'Russo One';
     z-index: 1;
 
     .box1 {
@@ -120,7 +119,7 @@
         text-transform:  uppercase; 
         transform-style: preserve-3d;
         
-        font-family: 'veger','Russo One';
+        font-family:'Russo One';
 
         &::before {
             content: '';
@@ -217,7 +216,7 @@
 }
 .navigation-link-text {
     
-    font-family: 'veger','Russo One';
+    font-family:'Russo One';
 }
 
 .navigation-link.projects {
