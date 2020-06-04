@@ -2,17 +2,27 @@ const path = require('path');
 require('dotenv/config');
 
 const srcPath = path.resolve(__dirname, 'client');
-const publicPath = path.resolve(__dirname, 'server/public');
+const publicPath = path.resolve(__dirname, 'server/public/dist');
 
 module.exports = {
   resolve: {
     extensions: ['.js', '.jsx', '.scss']
   },
-  entry: './client',
+  entry: {
+    index: './client/index.jsx',
+    another: './client/context.js',
+    another: './client/sass/main.scss',
+    another: './client/app.jsx',
+  },
   output: {
     path: publicPath,
     publicPath: publicPath,
-    filename: 'bundle.js'
+    filename: '[name].bundle.js'
+  },
+  optimization: {
+    splitChunks: {
+      chunks: 'all',
+    },
   },
   module: {
     rules: [
