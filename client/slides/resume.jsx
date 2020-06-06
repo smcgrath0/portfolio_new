@@ -61,7 +61,7 @@ class Resume extends React.Component {
                         <div className="job">
                           <h2>Headwire.com Inc.</h2>
                           <h3>Frontend Software Engineer</h3>
-                          <h4>Dec 2019 - May 2020</h4>
+                          <h4>Dec 2019 - Present</h4>
                           <ul>
                             <li>Managed JSP and Slightly files using AEM 6.1+ to build components and pages </li>
                             <li>Worked closely with clientlibs and models using JavaScript and Java </li>
