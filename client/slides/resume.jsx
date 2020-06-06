@@ -40,7 +40,7 @@ class Resume extends React.Component {
 
                   <div className="yui-u">
                     <div className="contact-info">
-                      <h3><a id="pdf" href="#" target="_blank">Download PDF</a></h3>
+                      <h3><a id="pdf" href="./img/Shane-Mcgrath-Resume.pdf" target="_blank">Download PDF</a></h3>
                       <h3><a href="mailto:smcgrath7777@gmail.com">smcgrath7777@gmail.com</a></h3>
                       <h3>(949)-554-9515</h3>
                     </div>

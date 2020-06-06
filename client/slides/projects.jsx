@@ -67,7 +67,7 @@ class Projects extends React.Component {
 
               <div className="card">
                 <div className="card-mediaContainer">
-                  <img src="/dist/img/lil-uzi.jpg" className="card-mediaContainer-image" alt="image alt"/>
+                  <img src="/dist/img/nile.png" className="card-mediaContainer-image" alt="image alt"/>
                 </div>
 
                 <div className="card-skillsContainer">
@@ -96,7 +96,7 @@ class Projects extends React.Component {
 
               <div className="card">
                 <div className="card-mediaContainer">
-                  <img src="/dist/img/lil-uzi.jpg" className="card-mediaContainer-image" alt="image alt"/>
+                  <img src="/dist/img/jungle-mix-up.png" className="card-mediaContainer-image" alt="image alt"/>
                 </div>
 
                 <div className="card-skillsContainer">
@@ -121,7 +121,7 @@ class Projects extends React.Component {
 
               <div className="card">
                 <div className="card-mediaContainer">
-                  <img src="/dist/img/lil-uzi.jpg" className="card-mediaContainer-image" alt="image alt"/>
+                  <img src="/dist/img/adme.png" className="card-mediaContainer-image" alt="image alt"/>
                 </div>
                 
                 <div className="card-skillsContainer">

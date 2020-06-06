@@ -8,7 +8,7 @@ const server = express();
 const port = process.env.PORT || 8080;
 
 server.use(bodyParser.json());
-console.log(port);
+
 server.use(express.static(path.join(__dirname, 'public')));
 server.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, 'public/index.html'));
